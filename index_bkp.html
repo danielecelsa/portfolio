@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniele Celsa | GenAI Engineer</title>
+    <!-- Tailwind CSS (via CDN for instant usage) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Custom Utilities */
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 glass-effect border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="font-bold text-xl text-blue-600">Daniele Celsa</div>
+                
+                <!-- Links & Button Container -->
+                <!-- ADDED 'items-center' HERE 👇 -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#projects" class="hover:text-blue-600 transition">Case Studies</a>
+                    <a href="#skills" class="hover:text-blue-600 transition">Tech Stack</a>
+                    <a href="#about" class="hover:text-blue-600 transition">About</a>
+                    <a href="#contact" class="px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="min-h-screen flex items-center justify-center pt-16 bg-gradient-to-br from-slate-50 to-slate-200">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <!-- Optional: Put your profile photo here -->
+            <div class="mb-8">
+                <div class="w-32 h-32 mx-auto rounded-full bg-slate-300 overflow-hidden ring-4 ring-white shadow-lg">
+                    <img src="images/photo.jpg" alt="Daniele Celsa" class="w-full h-full object-cover">
+                    <div class="w-full h-full flex items-center justify-center text-slate-400 text-4xl"><i class="fas fa-user"></i></div>
+                </div>
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight">
+                Building <span class="text-blue-600">Autonomous</span> Multi-Agent Systems for the Enterprise.
+            </h1>
+            <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                I engineer resilient GenAI workflows using LangGraph, MCP, and Agentic RAG. 
+                Moving beyond simple chatbots to create observable, cost-aware, and self-correcting AI architectures.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold shadow-lg hover:bg-blue-700 hover:-translate-y-1 transition transform">
+                    View Case Studies 👇
+                </a>
+                <a href="LINK_TO_YOUR_PDF_RESUME" target="_blank" class="px-8 py-4 bg-white text-slate-700 border border-slate-300 rounded-lg font-semibold shadow-sm hover:bg-slate-50 transition">
+                    Download Resume 📄
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECH STACK (The Bar) -->
+    <section id="skills" class="py-12 bg-white border-y border-slate-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <p class="text-center text-sm font-bold text-slate-400 uppercase tracking-widest mb-8">Technical Proficiency</p>
+            <div class="flex flex-wrap justify-center gap-4 md:gap-8 opacity-80">
+                <!-- Skill Pills -->
+                <span class="px-4 py-2 bg-slate-100 rounded-full text-slate-700 font-medium">🐍 Python & Async</span>
+                <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full font-medium">🦜 LangGraph & LangChain</span>
+                <span class="px-4 py-2 bg-green-50 text-green-700 rounded-full font-medium">🤖 Agentic RAG</span>
+                <span class="px-4 py-2 bg-purple-50 text-purple-700 rounded-full font-medium">🔌 MCP Standard</span>
+                <span class="px-4 py-2 bg-orange-50 text-orange-700 rounded-full font-medium">📊 ChromaDB & SQLite</span>
+                <span class="px-4 py-2 bg-slate-100 rounded-full text-slate-700 font-medium">🐳 Docker & Render</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-24 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Engineering Case Studies</h2>
+                <p class="text-slate-600">Selected projects demonstrating architectural patterns for GenAI.</p>
+            </div>
+
+            <!-- PROJECT 1: SUPERVISOR -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12 flex flex-col md:flex-row">
+                
+                <!-- VIDEO CONTAINER -->
+                <div class="md:w-1/2 bg-black border-b md:border-b-0 md:border-r border-slate-200 relative min-h-[300px]">
+                    <!-- The Video -->
+                    <!-- 
+                        controls: Adds Play/Pause/Fullscreen buttons
+                        preload="none": Forces the Poster to show first
+                        object-contain: Ensures 4:3 video is NEVER cropped
+                    -->
+                    <video 
+                        class="absolute inset-0 w-full h-full object-contain" 
+                        controls 
+                        poster="images/supervisor_poster.jpg">
+                        <source src="videos/supervisor.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- TEXT CONTAINER -->
+                <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                    <div class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2">Orchestration & FinOps</div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Hierarchical Multi-Agent Orchestrator</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        A robust supervisor-worker system that decomposes vague user requests into executable actions. It features a top-level planner delegating to specialized Sub-Agents (Calendar, Mail, SQL).
+                    </p>
+                    <ul class="mb-8 space-y-2 text-sm text-slate-500">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Custom Callback Handlers for Observability</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Autonomous Sub-Agents Delegation</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Per-Agent Cost Attribution</li>
+                    </ul>
+                    <div class="flex gap-4">
+                        <a href="LINK_TO_RENDER_APP_1" target="_blank" class="text-blue-600 font-semibold hover:text-blue-800">Launch App <i class="fas fa-external-link-alt ml-1"></i></a>
+                        <a href="LINK_TO_GITHUB_1" target="_blank" class="text-slate-600 font-semibold hover:text-slate-900">View Code <i class="fab fa-github ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 2: TAVILY/MCP -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12 flex flex-col md:flex-row-reverse">
+                <div class="md:w-1/2 bg-slate-200 relative min-h-[300px] border-b md:border-b-0 md:border-l border-slate-100">
+                     <!-- PLACEHOLDER FOR SCREENSHOT -->
+                     <div class="absolute inset-0 flex items-center justify-center text-slate-400">
+                        <div class="text-center">
+                            <i class="fas fa-network-wired text-5xl mb-4"></i>
+                            <p>Insert Screenshot of<br>Trace / Provenance Here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                    <div class="text-xs font-bold text-purple-600 uppercase tracking-wider mb-2">Microservices & Standards</div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Decoupled Autonomous Researcher</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        An autonomous web-research agent built on the <strong>Model Context Protocol (MCP)</strong>. It separates the LLM client from the tool execution server, communicating via SSE (Server-Sent Events).
+                    </p>
+                    <ul class="mb-8 space-y-2 text-sm text-slate-500">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Full MCP Implementation</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Hybrid Grounding (Anti-Hallucination)</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Decoupled Client-Server Architecture</li>
+                    </ul>
+                    <div class="flex gap-4">
+                        <a href="LINK_TO_RENDER_APP_2" target="_blank" class="text-blue-600 font-semibold hover:text-blue-800">Launch App <i class="fas fa-external-link-alt ml-1"></i></a>
+                        <a href="LINK_TO_GITHUB_2" target="_blank" class="text-slate-600 font-semibold hover:text-slate-900">View Code <i class="fab fa-github ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 3: RAG -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+                <div class="md:w-1/2 bg-slate-200 relative min-h-[300px] border-b md:border-b-0 md:border-r border-slate-100">
+                     <!-- PLACEHOLDER FOR SCREENSHOT -->
+                     <div class="absolute inset-0 flex items-center justify-center text-slate-400">
+                        <div class="text-center">
+                            <i class="fas fa-file-contract text-5xl mb-4"></i>
+                            <p>Insert Screenshot of<br>Metrics / RAG Tokens Here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                    <div class="text-xs font-bold text-orange-600 uppercase tracking-wider mb-2">Retrieval & Data Privacy</div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Enterprise Document Intelligence</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Going beyond linear "Chat with PDF", this agent uses a ReAct loop to <em>decide</em> when to retrieve context. It features ephemeral vector storage for data privacy and session isolation.
+                    </p>
+                    <ul class="mb-8 space-y-2 text-sm text-slate-500">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Session-Scoped ChromaDB</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Recursive Retrieval Strategies</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Context-Window Cost Optimization</li>
+                    </ul>
+                    <div class="flex gap-4">
+                        <a href="https://pdf-researcher.onrender.com" target="_blank" class="text-blue-600 font-semibold hover:text-blue-800">Launch App <i class="fas fa-external-link-alt ml-1"></i></a>
+                        <a href="https://github.com/danielecelsa/pdf-researcher" target="_blank" class="text-slate-600 font-semibold hover:text-slate-900">View Code <i class="fab fa-github ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="py-24 bg-white border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8">Bridging Theory & Production</h2>
+            <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                I have dedicated the last year to mastering the bleeding edge of Generative AI. My focus isn't just on making models "talk", but on making them <strong>work</strong> reliably in enterprise environments.
+            </p>
+            <p class="text-lg text-slate-600 leading-relaxed">
+                I build systems that are <strong>observable</strong> (I know why they fail), <strong>cost-effective</strong> (I track every token), and <strong>scalable</strong> (I use standards like MCP). Although I am entering the market, my portfolio demonstrates an architectural maturity aimed at solving real-world business problems.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTACT -->
+    <section id="contact" class="py-12 bg-slate-900 text-slate-400">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <div class="font-bold text-xl text-white">Daniele Celsa</div>
+                <div class="text-sm">GenAI Engineer • Milan, Italy</div> 
+            </div>
+            <div class="flex space-x-6">
+                <a href="https://github.com/danielecelsa" class="text-2xl hover:text-white transition"><i class="fab fa-github"></i></a>
+                <a href="LINK_TO_LINKEDIN" class="text-2xl hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:danielecelsa@gmail.com" class="text-2xl hover:text-white transition"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="text-center mt-8 text-xs text-slate-600">
+            &copy; 2025 Daniele Celsa. All rights reserved.
+        </div>
+    </section>
+
+</body>
+</html>
