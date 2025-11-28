@@ -92,21 +92,19 @@
 
             <!-- PROJECT 1: SUPERVISOR -->
             <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12 flex flex-col md:flex-row">
-                
                 <!-- VIDEO CONTAINER -->
                 <div class="md:w-1/2 bg-black border-b md:border-b-0 md:border-r border-slate-200 relative min-h-[300px]">
                     <!-- The Video -->
                     <!-- 
                         controls: Adds Play/Pause/Fullscreen buttons
-                        preload="none": Forces the Poster to show first
+                        preload="none": Forces the Poster to show first -> not used atm
                         object-contain: Ensures 4:3 video is NEVER cropped
+                        poster="images/supervisor_poster.jpg" -> not used atm
                     -->
                     <video 
                         class="absolute inset-0 w-full h-full object-contain" 
-                        controls 
-                        preload="none"
-                        poster="images/supervisor_poster.jpg">
-                        <source src="videos/supervisor_high.mp4" type="video/mp4">
+                        controls>
+                        <source src="videos/supervisor.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -124,7 +122,7 @@
                         <li><i class="fas fa-check text-green-500 mr-2"></i> Per-Agent Cost Attribution</li>
                     </ul>
                     <div class="flex gap-4">
-                        <a href="https://mail-calendar-assistant.onrender.com" target="_blank" class="text-blue-600 font-semibold hover:text-blue-800">Launch App <i class="fas fa-external-link-alt ml-1"></i></a>
+                        <a href="https://danielecelsa-supervisor.streamlit.app/" target="_blank" class="text-blue-600 font-semibold hover:text-blue-800">Launch App <i class="fas fa-external-link-alt ml-1"></i></a>
                         <a href="https://github.com/danielecelsa/mail-calendar-assistant" target="_blank" class="text-slate-600 font-semibold hover:text-slate-900">View Code <i class="fab fa-github ml-1"></i></a>
                     </div>
                 </div>
@@ -132,15 +130,24 @@
 
             <!-- PROJECT 2: TAVILY/MCP -->
             <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12 flex flex-col md:flex-row-reverse">
-                <div class="md:w-1/2 bg-slate-200 relative min-h-[300px] border-b md:border-b-0 md:border-l border-slate-100">
-                     <!-- PLACEHOLDER FOR SCREENSHOT -->
-                     <div class="absolute inset-0 flex items-center justify-center text-slate-400">
-                        <div class="text-center">
-                            <i class="fas fa-network-wired text-5xl mb-4"></i>
-                            <p>Insert Screenshot of<br>Trace / Provenance Here</p>
-                        </div>
-                    </div>
+                <!-- VIDEO CONTAINER -->
+                <div class="md:w-1/2 bg-black border-b md:border-b-0 md:border-r border-slate-200 relative min-h-[300px]">
+                    <!-- The Video -->
+                    <!-- 
+                        controls: Adds Play/Pause/Fullscreen buttons
+                        preload="none": Forces the Poster to show first -> not used atm
+                        object-contain: Ensures 4:3 video is NEVER cropped
+                        poster="images/supervisor_poster.jpg" -> not used atm
+                    -->
+                    <video 
+                        class="absolute inset-0 w-full h-full object-contain" 
+                        controls>
+                        <source src="videos/tavily.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
+
+                <!-- TEXT CONTAINER -->
                 <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
                     <div class="text-xs font-bold text-purple-600 uppercase tracking-wider mb-2">Microservices & Standards</div>
                     <h3 class="text-2xl font-bold text-slate-900 mb-4">Decoupled Autonomous Researcher</h3>
@@ -153,7 +160,7 @@
                         <li><i class="fas fa-check text-green-500 mr-2"></i> Decoupled Client-Server Architecture</li>
                     </ul>
                     <div class="flex gap-4">
-                        <a href="https://chatbot-with-search.onrender.com" target="_blank" class="text-blue-600 font-semibold hover:text-blue-800">Launch App <i class="fas fa-external-link-alt ml-1"></i></a>
+                        <a href="https://danielecelsa-chatbot-w-search.streamlit.app/" target="_blank" class="text-blue-600 font-semibold hover:text-blue-800">Launch App <i class="fas fa-external-link-alt ml-1"></i></a>
                         <a href="https://github.com/danielecelsa/chatbot-with-search" target="_blank" class="text-slate-600 font-semibold hover:text-slate-900">View Code <i class="fab fa-github ml-1"></i></a>
                     </div>
                 </div>
@@ -161,15 +168,24 @@
 
             <!-- PROJECT 3: RAG -->
             <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
-                <div class="md:w-1/2 bg-slate-200 relative min-h-[300px] border-b md:border-b-0 md:border-r border-slate-100">
-                     <!-- PLACEHOLDER FOR SCREENSHOT -->
-                     <div class="absolute inset-0 flex items-center justify-center text-slate-400">
-                        <div class="text-center">
-                            <i class="fas fa-file-contract text-5xl mb-4"></i>
-                            <p>Insert Screenshot of<br>Metrics / RAG Tokens Here</p>
-                        </div>
-                    </div>
+                <!-- VIDEO CONTAINER -->
+                <div class="md:w-1/2 bg-black border-b md:border-b-0 md:border-r border-slate-200 relative min-h-[300px]">
+                    <!-- The Video -->
+                    <!-- 
+                        controls: Adds Play/Pause/Fullscreen buttons
+                        preload="none": Forces the Poster to show first -> not used atm
+                        object-contain: Ensures 4:3 video is NEVER cropped
+                        poster="images/supervisor_poster.jpg" -> not used atm
+                    -->
+                    <video 
+                        class="absolute inset-0 w-full h-full object-contain" 
+                        controls>
+                        <source src="videos/pdf_researcher.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
+
+                <!-- TEXT CONTAINER -->
                 <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
                     <div class="text-xs font-bold text-orange-600 uppercase tracking-wider mb-2">Retrieval & Data Privacy</div>
                     <h3 class="text-2xl font-bold text-slate-900 mb-4">Enterprise Document Intelligence</h3>
@@ -182,7 +198,7 @@
                         <li><i class="fas fa-check text-green-500 mr-2"></i> Context-Window Cost Optimization</li>
                     </ul>
                     <div class="flex gap-4">
-                        <a href="https://pdf-researcher.onrender.com" target="_blank" class="text-blue-600 font-semibold hover:text-blue-800">Launch App <i class="fas fa-external-link-alt ml-1"></i></a>
+                        <a href="https://danielecelsa-doc-researcher.streamlit.app/" target="_blank" class="text-blue-600 font-semibold hover:text-blue-800">Launch App <i class="fas fa-external-link-alt ml-1"></i></a>
                         <a href="https://github.com/danielecelsa/pdf-researcher" target="_blank" class="text-slate-600 font-semibold hover:text-slate-900">View Code <i class="fab fa-github ml-1"></i></a>
                     </div>
                 </div>
