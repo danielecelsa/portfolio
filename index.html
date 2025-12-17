@@ -14,6 +14,12 @@
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
         }
+        @keyframes scan {
+            0% { top: 0%; opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { top: 100%; opacity: 0; }
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
@@ -201,7 +207,7 @@
             </div>
 
             <!-- PROJECT 3: RAG -->
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12 flex flex-col md:flex-row">
                 <!-- VIDEO CONTAINER -->
                 <div class="md:w-1/2 bg-black border-b md:border-b-0 md:border-r border-slate-200 relative min-h-[300px]">
                     <!-- The Video -->
@@ -251,6 +257,78 @@
                     <div class="flex gap-4">
                         <a href="https://agentic-rag.46.224.88.247.nip.io/" target="_blank" class="text-blue-600 font-semibold hover:text-blue-800">Launch App <i class="fas fa-external-link-alt ml-1"></i></a>
                         <a href="https://github.com/danielecelsa/pdf-researcher" target="_blank" class="text-slate-600 font-semibold hover:text-slate-900">View Code <i class="fab fa-github ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 4: MULTIMODAL AUDITOR (WIP) -->
+            <div class="group bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row-reverse border border-slate-100 relative">
+                
+                <!-- "IN DEVELOPMENT" OVERLAY BADGE (Optional, for extra emphasis) -->
+                <div class="absolute top-0 right-0 bg-slate-100 text-slate-500 text-[10px] font-bold px-3 py-1 rounded-bl-lg z-10 border-l border-b border-slate-200">
+                    <i class="fas fa-code-branch mr-1"></i> CURRENTLY ENGINEERING
+                </div>
+
+                <!-- VIDEO CONTAINER (PLACEHOLDER) -->
+                <div class="md:w-1/2 bg-slate-900 border-b md:border-b-0 md:border-r border-slate-200 relative min-h-[300px] flex flex-col items-center justify-center overflow-hidden">
+                    
+                    <!-- Background Grid Effect -->
+                    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#64748b 1px, transparent 1px); background-size: 20px 20px;"></div>
+                    
+                    <!-- Pulsing Icon & Text -->
+                    <div class="z-10 text-center">
+                        <div class="relative inline-block">
+                            <i class="fas fa-video text-5xl text-rose-500 mb-4 relative z-10"></i>
+                            <div class="absolute inset-0 bg-rose-500 blur-xl opacity-20 animate-pulse"></div>
+                        </div>
+                        <h4 class="text-slate-300 font-mono text-lg font-bold tracking-widest mt-2">SYSTEM INITIALIZING...</h4>
+                        <p class="text-slate-500 text-sm mt-2 font-mono"><i class="fas fa-cog fa-spin mr-2"></i>Deploying Multimodal Agent</p>
+                    </div>
+
+                    <!-- Scanning Line Animation -->
+                    <div class="absolute top-0 left-0 w-full h-1 bg-rose-500 shadow-[0_0_15px_rgba(244,63,94,0.8)] animate-[scan_3s_ease-in-out_infinite] opacity-50"></div>
+                </div>
+
+                <!-- TEXT CONTAINER -->
+                <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center bg-slate-50/50">
+                    <div class="flex items-center space-x-2 mb-2">
+                        <div class="text-xs font-bold text-rose-600 uppercase tracking-wider">Video Understanding & Structured Data</div>
+                        <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-rose-100 text-rose-700 border border-rose-200 animate-pulse">
+                            IN PROGRESS
+                        </span>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Multimodal Compliance Auditor</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        My next milestone: An AI Auditor capable of <strong>watching and listening</strong> to video recordings. 
+                        It leverages Gemini 2.5 to process long-context multimedia and uses Pydantic to enforce Structured JSON Output for <strong>automated compliance checks</strong> and <strong>sentiment analysis</strong>.
+                    </p>
+                    
+                    <ul class="mb-8 space-y-3 opacity-75">
+                        <li class="flex items-center">
+                            <i class="fas fa-circle-notch fa-spin text-rose-500 mr-3 text-sm"></i>
+                            <span class="text-slate-700 font-semibold text-sm">
+                                Native Video/Audio Ingestion (Gemini 2.5)
+                            </span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-circle-notch fa-spin text-rose-500 mr-3 text-sm"></i>
+                            <span class="text-slate-700 font-semibold text-sm">
+                                Structured Data Extraction (Pydantic)
+                            </span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-circle-notch fa-spin text-rose-500 mr-3 text-sm"></i>
+                            <span class="text-slate-700 font-semibold text-sm">
+                                Automated Risk & Sentiment Scoring
+                            </span>
+                        </li>
+                    </ul>
+                    
+                    <div class="flex gap-4">
+                        <button disabled class="px-4 py-2 bg-slate-200 text-slate-400 rounded-lg font-semibold cursor-not-allowed text-sm">
+                            Deployment in Progress...
+                        </button>
                     </div>
                 </div>
             </div>
