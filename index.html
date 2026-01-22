@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniele Celsa | GenAI Engineer</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="GenAI Engineer specializing in Autonomous Multi-Agent Systems, Agentic RAG, and Model Context Protocol (MCP). Building production-grade AI architectures with LangGraph and LangChain.">
+    <meta name="keywords"
+        content="GenAI Engineer, LangGraph, LangChain, Multi-Agent Systems, Agentic RAG, MCP, AI Engineer, Machine Learning, Python">
+    <meta name="author" content="Daniele Celsa">
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Daniele Celsa | GenAI Engineer">
+    <meta property="og:description"
+        content="Building Autonomous Multi-Agent Systems for the Enterprise. Specializing in LangGraph, Agentic RAG, and MCP.">
+    <meta property="og:image" content="images/photo.jpg">
+    <meta property="og:url" content="https://danielecelsa.github.io/portfolio/">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Daniele Celsa | GenAI Engineer">
+    <meta name="twitter:description" content="Building Autonomous Multi-Agent Systems for the Enterprise.">
     <!-- Tailwind CSS (via CDN for instant usage) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome for Icons -->
@@ -14,14 +32,29 @@
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
         }
+
         @keyframes scan {
-            0% { top: 0%; opacity: 0; }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { top: 100%; opacity: 0; }
+            0% {
+                top: 0%;
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                top: 100%;
+                opacity: 0;
+            }
         }
     </style>
 </head>
+
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
     <!-- NAVIGATION -->
@@ -30,13 +63,15 @@
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div class="font-bold text-xl text-blue-600">Daniele Celsa</div>
-                
+
                 <!-- Links & Button Container -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#projects" class="hover:text-blue-600 transition">Case Studies</a>
                     <a href="#skills" class="hover:text-blue-600 transition">Tech Stack</a>
                     <a href="#about" class="hover:text-blue-600 transition">About</a>
-                    <a href="#contact" class="px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition">Contact Me</a>
+                    <a href="#contact"
+                        class="px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition">Contact
+                        Me</a>
                 </div>
             </div>
         </div>
@@ -49,22 +84,25 @@
             <div class="mb-8">
                 <div class="w-32 h-32 mx-auto rounded-full bg-slate-300 overflow-hidden ring-4 ring-white shadow-lg">
                     <img src="images/photo.jpg" alt="Daniele Celsa" class="w-full h-full object-cover">
-                    <div class="w-full h-full flex items-center justify-center text-slate-400 text-4xl"><i class="fas fa-user"></i></div>
+                    <div class="w-full h-full flex items-center justify-center text-slate-400 text-4xl"><i
+                            class="fas fa-user"></i></div>
                 </div>
             </div>
-            
+
             <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight">
                 Building <span class="text-blue-600">Autonomous</span> Multi-Agent Systems for the Enterprise.
             </h1>
             <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-                I engineer resilient GenAI workflows using LangGraph, MCP, and Agentic RAG. 
+                I engineer resilient GenAI workflows using LangGraph, MCP, and Agentic RAG.
                 Moving beyond simple chatbots to create observable, cost-aware, and self-correcting AI architectures.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#projects" class="px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold shadow-lg hover:bg-blue-700 hover:-translate-y-1 transition transform">
+                <a href="#projects"
+                    class="px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold shadow-lg hover:bg-blue-700 hover:-translate-y-1 transition transform">
                     View Case Studies 👇
                 </a>
-                <a href="docs/Daniele_Celsa_GenAI_Engineer_CV.pdf" target="_blank" class="px-8 py-4 bg-white text-slate-700 border border-slate-300 rounded-lg font-semibold shadow-sm hover:bg-slate-50 transition">
+                <a href="docs/Daniele_Celsa_GenAI_Engineer_CV.pdf" target="_blank"
+                    class="px-8 py-4 bg-white text-slate-700 border border-slate-300 rounded-lg font-semibold shadow-sm hover:bg-slate-50 transition">
                     Download Resume 📄
                 </a>
             </div>
@@ -74,15 +112,30 @@
     <!-- TECH STACK (The Bar) -->
     <section id="skills" class="py-12 bg-white border-y border-slate-200">
         <div class="max-w-6xl mx-auto px-4">
-            <p class="text-center text-sm font-bold text-slate-400 uppercase tracking-widest mb-8">Technical Proficiency</p>
-            <div class="flex flex-wrap justify-center gap-4 md:gap-8 opacity-80">
-                <!-- Skill Pills -->
-                <span class="px-4 py-2 bg-slate-100 rounded-full text-slate-700 font-medium">🐍 Python & Async</span>
-                <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full font-medium">🦜 LangGraph & LangChain</span>
+            <p class="text-center text-sm font-bold text-slate-400 uppercase tracking-widest mb-8">Technical Proficiency
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 md:gap-6 opacity-80">
+                <!-- Skill Pills - Row 1: Core AI -->
+                <span class="px-4 py-2 bg-slate-100 rounded-full text-slate-700 font-medium">🐍 Python & AsyncIO</span>
+                <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full font-medium">🦜 LangGraph &
+                    LangChain</span>
                 <span class="px-4 py-2 bg-green-50 text-green-700 rounded-full font-medium">🤖 Agentic RAG</span>
                 <span class="px-4 py-2 bg-purple-50 text-purple-700 rounded-full font-medium">🔌 MCP Standard</span>
-                <span class="px-4 py-2 bg-orange-50 text-orange-700 rounded-full font-medium">📊 ChromaDB & SQLite</span>
+                <span class="px-4 py-2 bg-indigo-50 text-indigo-700 rounded-full font-medium">🧠 Google Gemini
+                    2.5</span>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4 md:gap-6 opacity-80 mt-4">
+                <!-- Skill Pills - Row 2: Data & Infra -->
+                <span class="px-4 py-2 bg-orange-50 text-orange-700 rounded-full font-medium">📊 ChromaDB &
+                    SQLite</span>
+                <span class="px-4 py-2 bg-teal-50 text-teal-700 rounded-full font-medium">🔍 Hybrid Search +
+                    Reranking</span>
+                <span class="px-4 py-2 bg-cyan-50 text-cyan-700 rounded-full font-medium">⚡ FastAPI & Pydantic</span>
+                <span class="px-4 py-2 bg-red-50 text-red-700 rounded-full font-medium">📱 Streamlit</span>
                 <span class="px-4 py-2 bg-slate-100 rounded-full text-slate-700 font-medium">🐳 Docker & Render</span>
+                <span class="px-4 py-2 bg-yellow-50 text-yellow-700 rounded-full font-medium">📈 Observability
+                    (FinOps)</span>
+                <span class="px-4 py-2 bg-rose-50 text-rose-700 rounded-full font-medium">🔔 Distributed Logging</span>
             </div>
         </div>
     </section>
@@ -98,7 +151,8 @@
             <!-- PROJECT 1: SUPERVISOR -->
             <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12 flex flex-col md:flex-row">
                 <!-- VIDEO CONTAINER -->
-                <div class="md:w-1/2 bg-black border-b md:border-b-0 md:border-r border-slate-200 relative min-h-[300px]">
+                <div
+                    class="md:w-1/2 bg-black border-b md:border-b-0 md:border-r border-slate-200 relative min-h-[300px]">
                     <!-- The Video -->
                     <!-- 
                         controls: Adds Play/Pause/Fullscreen buttons
@@ -106,9 +160,7 @@
                         object-contain: Ensures 4:3 video is NEVER cropped
                         poster="images/supervisor_poster.jpg" -> not used atm
                     -->
-                    <video 
-                        class="absolute inset-0 w-full h-full object-contain" 
-                        controls>
+                    <video class="absolute inset-0 w-full h-full object-contain" controls>
                         <source src="videos/supervisor.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -116,10 +168,14 @@
 
                 <!-- TEXT CONTAINER -->
                 <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
-                    <div class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2">Orchestration & FinOps</div>
+                    <div class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2">Orchestration & FinOps
+                    </div>
                     <h3 class="text-2xl font-bold text-slate-900 mb-4">Hierarchical Multi-Agent Orchestrator</h3>
                     <p class="text-slate-600 mb-6 leading-relaxed">
-                        A <strong>Hierarchical Multi-Agent System</strong> that decomposes vague requests into executable actions. Features a top-level <strong>Supervisor</strong> that orchestrates specialized <strong>Sub-Agents</strong> (SQL, Calendar, Mail) to execute complex workflows without context pollution.
+                        A <strong>Hierarchical Multi-Agent System</strong> that decomposes vague requests into
+                        executable actions. Features a top-level <strong>Supervisor</strong> that orchestrates
+                        specialized <strong>Sub-Agents</strong> (SQL, Calendar, Mail) to execute complex workflows
+                        without context pollution.
                     </p>
                     <ul class="mb-8 space-y-3">
                         <li class="flex items-center">
@@ -144,8 +200,12 @@
                         </li>
                     </ul>
                     <div class="flex gap-4">
-                        <a href="https://orchestrator.46.224.88.247.nip.io/" target="_blank" class="text-blue-600 font-semibold hover:text-blue-800">Launch App <i class="fas fa-external-link-alt ml-1"></i></a>
-                        <a href="https://github.com/danielecelsa/mail-calendar-assistant" target="_blank" class="text-slate-600 font-semibold hover:text-slate-900">View Code <i class="fab fa-github ml-1"></i></a>
+                        <a href="https://orchestrator.46.224.88.247.nip.io/" target="_blank"
+                            class="text-blue-600 font-semibold hover:text-blue-800">Launch App <i
+                                class="fas fa-external-link-alt ml-1"></i></a>
+                        <a href="https://github.com/danielecelsa/mail-calendar-assistant" target="_blank"
+                            class="text-slate-600 font-semibold hover:text-slate-900">View Code <i
+                                class="fab fa-github ml-1"></i></a>
                     </div>
                 </div>
             </div>
@@ -153,7 +213,8 @@
             <!-- PROJECT 2: TAVILY/MCP -->
             <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12 flex flex-col md:flex-row-reverse">
                 <!-- VIDEO CONTAINER -->
-                <div class="md:w-1/2 bg-black border-b md:border-b-0 md:border-r border-slate-200 relative min-h-[300px]">
+                <div
+                    class="md:w-1/2 bg-black border-b md:border-b-0 md:border-r border-slate-200 relative min-h-[300px]">
                     <!-- The Video -->
                     <!-- 
                         controls: Adds Play/Pause/Fullscreen buttons
@@ -161,9 +222,7 @@
                         object-contain: Ensures 4:3 video is NEVER cropped
                         poster="images/supervisor_poster.jpg" -> not used atm
                     -->
-                    <video 
-                        class="absolute inset-0 w-full h-full object-contain" 
-                        controls>
+                    <video class="absolute inset-0 w-full h-full object-contain" controls>
                         <source src="videos/tavily.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -171,10 +230,13 @@
 
                 <!-- TEXT CONTAINER -->
                 <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
-                    <div class="text-xs font-bold text-purple-600 uppercase tracking-wider mb-2">Microservices & Standards</div>
+                    <div class="text-xs font-bold text-purple-600 uppercase tracking-wider mb-2">Microservices &
+                        Standards</div>
                     <h3 class="text-2xl font-bold text-slate-900 mb-4">Decoupled Autonomous Researcher</h3>
                     <p class="text-slate-600 mb-6 leading-relaxed">
-                        An autonomous web-research agent built on the <strong>Model Context Protocol (MCP)</strong>. It separates the LLM client from the tool execution server, communicating via SSE (Server-Sent Events).
+                        An autonomous web-research agent built on the <strong>Model Context Protocol (MCP)</strong>. It
+                        separates the LLM client from the tool execution server, communicating via SSE (Server-Sent
+                        Events).
                     </p>
                     <ul class="mb-8 space-y-3">
                         <li class="flex items-center">
@@ -199,8 +261,12 @@
                         </li>
                     </ul>
                     <div class="flex gap-4">
-                        <a href="https://chat-w-search.46.224.88.247.nip.io/" target="_blank" class="text-blue-600 font-semibold hover:text-blue-800">Launch App <i class="fas fa-external-link-alt ml-1"></i></a>
-                        <a href="https://github.com/danielecelsa/chatbot-with-search" target="_blank" class="text-slate-600 font-semibold hover:text-slate-900">View Code <i class="fab fa-github ml-1"></i></a>
+                        <a href="https://chat-w-search.46.224.88.247.nip.io/" target="_blank"
+                            class="text-blue-600 font-semibold hover:text-blue-800">Launch App <i
+                                class="fas fa-external-link-alt ml-1"></i></a>
+                        <a href="https://github.com/danielecelsa/chatbot-with-search" target="_blank"
+                            class="text-slate-600 font-semibold hover:text-slate-900">View Code <i
+                                class="fab fa-github ml-1"></i></a>
                     </div>
                 </div>
             </div>
@@ -208,7 +274,8 @@
             <!-- PROJECT 3: RAG -->
             <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12 flex flex-col md:flex-row">
                 <!-- VIDEO CONTAINER -->
-                <div class="md:w-1/2 bg-black border-b md:border-b-0 md:border-r border-slate-200 relative min-h-[300px]">
+                <div
+                    class="md:w-1/2 bg-black border-b md:border-b-0 md:border-r border-slate-200 relative min-h-[300px]">
                     <!-- The Video -->
                     <!-- 
                         controls: Adds Play/Pause/Fullscreen buttons
@@ -216,9 +283,7 @@
                         object-contain: Ensures 4:3 video is NEVER cropped
                         poster="images/supervisor_poster.jpg" -> not used atm
                     -->
-                    <video 
-                        class="absolute inset-0 w-full h-full object-contain" 
-                        controls>
+                    <video class="absolute inset-0 w-full h-full object-contain" controls>
                         <source src="videos/pdf_researcher.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -226,10 +291,12 @@
 
                 <!-- TEXT CONTAINER -->
                 <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
-                    <div class="text-xs font-bold text-orange-600 uppercase tracking-wider mb-2">Retrieval & Data Privacy</div>
+                    <div class="text-xs font-bold text-orange-600 uppercase tracking-wider mb-2">Retrieval & Data
+                        Privacy</div>
                     <h3 class="text-2xl font-bold text-slate-900 mb-4">Enterprise Document Intelligence</h3>
                     <p class="text-slate-600 mb-6 leading-relaxed">
-                        Beyond linear RAG: An <strong>Agentic Retrieval System</strong> that <em>reasons</em> before searching. Features ephemeral vector storage for strict data privacy and session isolation.
+                        Beyond linear RAG: An <strong>Agentic Retrieval System</strong> that <em>reasons</em> before
+                        searching. Features ephemeral vector storage for strict data privacy and session isolation.
                     </p>
                     <ul class="mb-8 space-y-3">
                         <li class="flex items-center">
@@ -254,55 +321,73 @@
                         </li>
                     </ul>
                     <div class="flex gap-4">
-                        <a href="https://agentic-rag.46.224.88.247.nip.io/" target="_blank" class="text-blue-600 font-semibold hover:text-blue-800">Launch App <i class="fas fa-external-link-alt ml-1"></i></a>
-                        <a href="https://github.com/danielecelsa/pdf-researcher" target="_blank" class="text-slate-600 font-semibold hover:text-slate-900">View Code <i class="fab fa-github ml-1"></i></a>
+                        <a href="https://agentic-rag.46.224.88.247.nip.io/" target="_blank"
+                            class="text-blue-600 font-semibold hover:text-blue-800">Launch App <i
+                                class="fas fa-external-link-alt ml-1"></i></a>
+                        <a href="https://github.com/danielecelsa/pdf-researcher" target="_blank"
+                            class="text-slate-600 font-semibold hover:text-slate-900">View Code <i
+                                class="fab fa-github ml-1"></i></a>
                     </div>
                 </div>
             </div>
 
             <!-- PROJECT 4: MULTIMODAL AUDITOR (WIP) -->
-            <div class="group bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row-reverse border border-slate-100 relative">
-                
+            <div
+                class="group bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row-reverse border border-slate-100 relative">
+
                 <!-- "IN DEVELOPMENT" OVERLAY BADGE (Optional, for extra emphasis) -->
-                <div class="absolute top-0 right-0 bg-slate-100 text-slate-500 text-[10px] font-bold px-3 py-1 rounded-bl-lg z-10 border-l border-b border-slate-200">
+                <div
+                    class="absolute top-0 right-0 bg-slate-100 text-slate-500 text-[10px] font-bold px-3 py-1 rounded-bl-lg z-10 border-l border-b border-slate-200">
                     <i class="fas fa-code-branch mr-1"></i> CURRENTLY ENGINEERING
                 </div>
 
                 <!-- VIDEO CONTAINER (PLACEHOLDER) -->
-                <div class="md:w-1/2 bg-slate-900 border-b md:border-b-0 md:border-r border-slate-200 relative min-h-[300px] flex flex-col items-center justify-center overflow-hidden">
-                    
+                <div
+                    class="md:w-1/2 bg-slate-900 border-b md:border-b-0 md:border-r border-slate-200 relative min-h-[300px] flex flex-col items-center justify-center overflow-hidden">
+
                     <!-- Background Grid Effect -->
-                    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#64748b 1px, transparent 1px); background-size: 20px 20px;"></div>
-                    
+                    <div class="absolute inset-0 opacity-10"
+                        style="background-image: radial-gradient(#64748b 1px, transparent 1px); background-size: 20px 20px;">
+                    </div>
+
                     <!-- Pulsing Icon & Text -->
                     <div class="z-10 text-center">
                         <div class="relative inline-block">
                             <i class="fas fa-video text-5xl text-rose-500 mb-4 relative z-10"></i>
                             <div class="absolute inset-0 bg-rose-500 blur-xl opacity-20 animate-pulse"></div>
                         </div>
-                        <h4 class="text-slate-300 font-mono text-lg font-bold tracking-widest mt-2">SYSTEM INITIALIZING...</h4>
-                        <p class="text-slate-500 text-sm mt-2 font-mono"><i class="fas fa-cog fa-spin mr-2"></i>Deploying Multimodal Agent</p>
+                        <h4 class="text-slate-300 font-mono text-lg font-bold tracking-widest mt-2">SYSTEM
+                            INITIALIZING...</h4>
+                        <p class="text-slate-500 text-sm mt-2 font-mono"><i
+                                class="fas fa-cog fa-spin mr-2"></i>Deploying Multimodal Agent</p>
                     </div>
 
                     <!-- Scanning Line Animation -->
-                    <div class="absolute top-0 left-0 w-full h-1 bg-rose-500 shadow-[0_0_15px_rgba(244,63,94,0.8)] animate-[scan_3s_ease-in-out_infinite] opacity-50"></div>
+                    <div
+                        class="absolute top-0 left-0 w-full h-1 bg-rose-500 shadow-[0_0_15px_rgba(244,63,94,0.8)] animate-[scan_3s_ease-in-out_infinite] opacity-50">
+                    </div>
                 </div>
 
                 <!-- TEXT CONTAINER -->
                 <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center bg-slate-50/50">
                     <div class="flex items-center space-x-2 mb-2">
-                        <div class="text-xs font-bold text-rose-600 uppercase tracking-wider">Video Understanding & Structured Data</div>
-                        <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-rose-100 text-rose-700 border border-rose-200 animate-pulse">
+                        <div class="text-xs font-bold text-rose-600 uppercase tracking-wider">Video Understanding &
+                            Structured Data</div>
+                        <span
+                            class="px-2 py-0.5 rounded text-[10px] font-bold bg-rose-100 text-rose-700 border border-rose-200 animate-pulse">
                             IN PROGRESS
                         </span>
                     </div>
-                    
+
                     <h3 class="text-2xl font-bold text-slate-900 mb-4">Multimodal Compliance Auditor</h3>
                     <p class="text-slate-600 mb-6 leading-relaxed">
-                        My next milestone: An AI Auditor capable of <strong>watching and listening</strong> to video recordings. 
-                        It leverages Gemini 2.5 to process long-context multimedia and uses Pydantic to enforce Structured JSON Output for <strong>automated compliance checks</strong> and <strong>sentiment analysis</strong>.
+                        My next milestone: An AI Auditor capable of <strong>watching and listening</strong> to video
+                        recordings.
+                        It leverages Gemini 2.5 to process long-context multimedia and uses Pydantic to enforce
+                        Structured JSON Output for <strong>automated compliance checks</strong> and <strong>sentiment
+                            analysis</strong>.
                     </p>
-                    
+
                     <ul class="mb-8 space-y-3 opacity-75">
                         <li class="flex items-center">
                             <i class="fas fa-circle-notch fa-spin text-rose-500 mr-3 text-sm"></i>
@@ -323,9 +408,10 @@
                             </span>
                         </li>
                     </ul>
-                    
+
                     <div class="flex gap-4">
-                        <button disabled class="px-4 py-2 bg-slate-200 text-slate-400 rounded-lg font-semibold cursor-not-allowed text-sm">
+                        <button disabled
+                            class="px-4 py-2 bg-slate-200 text-slate-400 rounded-lg font-semibold cursor-not-allowed text-sm">
                             Deployment in Progress...
                         </button>
                     </div>
@@ -340,11 +426,15 @@
         <div class="max-w-4xl mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold text-slate-900 mb-8">Bridging Theory & Production</h2>
             <p class="text-lg text-slate-600 leading-relaxed mb-6">
-                Over the past year, I’ve focused on the engineering realities of Generative AI — my goal isn’t just to make models 'talk', but to make them <strong>production-grade</strong>.
+                Over the past year, I’ve focused on the engineering realities of Generative AI — my goal isn’t just to
+                make models 'talk', but to make them <strong>production-grade</strong>.
             </p>
             <p class="text-lg text-slate-600 leading-relaxed">
-                Leveraging a decade of engineering experience, I focus on the <strong>infrastructure</strong> around the model: <strong>observability</strong> (custom callback handlers), <strong>cost-control</strong> (granular token tracking - FinOps), <strong>scalability</strong> (MCP standards). 
-                <br> <br> This portfolio is intended to show the level of passion and attention to detail I aim to bring to <strong>real-world GenAI projects.</strong>
+                Leveraging a decade of engineering experience, I focus on the <strong>infrastructure</strong> around the
+                model: <strong>observability</strong> (custom callback handlers), <strong>cost-control</strong>
+                (granular token tracking - FinOps), <strong>scalability</strong> (MCP standards).
+                <br> <br> This portfolio is intended to show the level of passion and attention to detail I aim to bring
+                to <strong>real-world GenAI projects.</strong>
             </p>
         </div>
     </section>
@@ -354,12 +444,15 @@
         <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
             <div class="mb-4 md:mb-0">
                 <div class="font-bold text-xl text-white">Daniele Celsa</div>
-                <div class="text-sm">GenAI Engineer • Milan, Italy</div> 
+                <div class="text-sm">GenAI Engineer • Milan, Italy</div>
             </div>
             <div class="flex space-x-6">
-                <a href="https://github.com/danielecelsa" class="text-2xl hover:text-white transition"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/domenico-daniele-celsa-518b758b/" class="text-2xl hover:text-white transition"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:danielecelsa@gmail.com" class="text-2xl hover:text-white transition"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/danielecelsa" class="text-2xl hover:text-white transition"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/daniele-celsa-518b758b/"
+                    class="text-2xl hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:danielecelsa@gmail.com" class="text-2xl hover:text-white transition"><i
+                        class="fas fa-envelope"></i></a>
             </div>
         </div>
         <div class="text-center mt-8 text-xs text-slate-600">
@@ -368,4 +461,5 @@
     </section>
 
 </body>
+
 </html>
