@@ -8,9 +8,9 @@
     <link rel="icon" type="image/png" href="images/favicon.svg">
     <!-- SEO Meta Tags -->
     <meta name="description"
-        content="GenAI Engineer specializing in Autonomous Multi-Agent Systems, Agentic RAG, and Model Context Protocol (MCP). Building production-grade AI architectures with LangGraph and LangChain.">
+        content="GenAI Engineer specializing in Autonomous Multi-Agent Systems, Agentic RAG, and Model Context Protocol (MCP). Building production-grade AI architectures with observability, evaluation harnesses, and FinOps.">
     <meta name="keywords"
-        content="GenAI Engineer, LangGraph, LangChain, Multi-Agent Systems, Agentic RAG, MCP, AI Engineer, Machine Learning, Python">
+        content="GenAI Engineer, LangGraph, LangChain, Multi-Agent Systems, Agentic RAG, MCP, AI Engineer, Machine Learning, Python, LangSmith, RAGAS, LLM Evaluation, Observability, CI/CD">
     <meta name="author" content="Daniele Celsa">
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
@@ -95,7 +95,7 @@
             </h1>
             <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
                 I engineer resilient GenAI workflows using LangGraph, MCP, and Agentic RAG.
-                Moving beyond simple chatbots to create observable, cost-aware, and self-correcting AI architectures.
+                Moving beyond simple chatbots to create observable, evaluated, cost-aware, and self-correcting AI architectures.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#projects"
@@ -133,10 +133,15 @@
                     Reranking</span>
                 <span class="px-4 py-2 bg-cyan-50 text-cyan-700 rounded-full font-medium">⚡ FastAPI & Pydantic</span>
                 <span class="px-4 py-2 bg-red-50 text-red-700 rounded-full font-medium">📱 Streamlit</span>
-                <span class="px-4 py-2 bg-slate-100 rounded-full text-slate-700 font-medium">🐳 Docker & Render</span>
+                <span class="px-4 py-2 bg-slate-100 rounded-full text-slate-700 font-medium">🐳 Docker</span>
                 <span class="px-4 py-2 bg-yellow-50 text-yellow-700 rounded-full font-medium">📈 Observability
                     (FinOps)</span>
                 <span class="px-4 py-2 bg-rose-50 text-rose-700 rounded-full font-medium">🔔 Distributed Logging</span>
+                <span class="px-4 py-2 bg-violet-50 text-violet-700 rounded-full font-medium">🔭 LLM Tracing
+                    (LangSmith)</span>
+                <span class="px-4 py-2 bg-emerald-50 text-emerald-700 rounded-full font-medium">🧪 RAG Eval
+                    (RAGAS)</span>
+                <span class="px-4 py-2 bg-sky-50 text-sky-700 rounded-full font-medium">⚙️ CI/CD + Eval-Gate</span>
             </div>
         </div>
     </section>
@@ -185,7 +190,7 @@
                             <i class="fas fa-check text-green-500 mr-3 text-sm"></i>
                             <!-- Text: Dark Slate, Semi-Bold for elegance -->
                             <span class="text-slate-700 font-semibold text-sm">
-                                Custom Callback Handlers for Observability
+                                Custom Callback Handlers (validated vs LangSmith, token-for-token)
                             </span>
                         </li>
                         <li class="flex items-center">
@@ -314,7 +319,13 @@
                         <li class="flex items-center">
                             <i class="fas fa-check text-green-500 mr-3 text-sm"></i>
                             <span class="text-slate-700 font-semibold text-sm">
-                                Recursive Retrieval Strategies
+                                Hybrid Search + Cross-Encoder Reranking
+                            </span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3 text-sm"></i>
+                            <span class="text-slate-700 font-semibold text-sm">
+                                RAG Evaluation Harness (recall@k + faithfulness)
                             </span>
                         </li>
                         <li class="flex items-center">
@@ -436,6 +447,7 @@
             <p class="text-lg text-slate-600 leading-relaxed">
                 My focus moves beyond simple chatbots to the infrastructure around the model:
                 <strong>observability</strong> (custom middleware),
+                <strong>evaluation</strong> (eval-gates on retrieval &amp; faithfulness),
                 <strong>unit economics</strong> (granular FinOps), and <strong>scalability</strong> (MCP standards).
                 <br> <br> This portfolio demonstrates the architectural rigor and attention to detail that
                 <strong>define my engineering approach.</strong>
